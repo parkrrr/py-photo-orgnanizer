@@ -8,3 +8,6 @@ PhotoDirectory\Year\Month\Day
 Requirements:
 * Python 2.7
 * [Python Image Library](http://www.pythonware.com/products/pil/)
+
+Usage:
+`organize_photos.py [photo diectory]`

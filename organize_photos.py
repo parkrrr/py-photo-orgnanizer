@@ -10,11 +10,10 @@ QUIT_ON_ERROR = False
 # NO slash at the end
 photo_dir = "I:\Dropbox\Photos"
 
-def get_files(top, callback):
-    '''recursively descend the directory tree rooted at top,
-       calling the callback function for each regular file'''
+def get_files(dir, callback):
+    # iterate over each file in the given directory
 
-    for f in os.listdir(top):
+    for f in os.listdir(dir):
         pathname = os.path.join(top, f)
         mode = os.stat(pathname)[ST_MODE]
         if S_ISREG(mode):
